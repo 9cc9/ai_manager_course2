@@ -115,11 +115,11 @@ public class ConversationController {
         ConversationChatDetail responseChat = chatService.chat(conversation, chat);
 
         conversationService.addChat(chat);
+        chats.add(chat);
         if (responseChat != null) {
             conversationService.addChat(responseChat);
+            chats.add(responseChat);
         }
-        chats.add(chat);
-        chats.add(responseChat);
         return chats;
     }
 
