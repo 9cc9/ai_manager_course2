@@ -23,6 +23,7 @@ public class ChatServiceImpl implements ChatService {
      */
     @Override
     public ConversationChatDetail chat(Conversation conversation, ConversationChatDetail currentChat) {
+        // 发起post请求 new RestTemplate().postForEntity
         return null;
     }
 
@@ -35,6 +36,7 @@ public class ChatServiceImpl implements ChatService {
      */
     @Override
     public Flux<String> streamChat(Conversation conversation, ConversationChatDetail chat) {
+        // 基于Flux实现流式读取
         return null;
     }
 }
